@@ -2,7 +2,10 @@ import express from "express";
 
 let users = [
   { id: 2, name: "Noa" },
+  { id: 1, name: "Eran" },
   { id: 3, name: "Yossi" },
+  { id: 4, name: "Matan" },
+  { id: 4, name: "Arbel" },
 ];
 
 const app = express();
@@ -17,6 +20,11 @@ app.use(express.json());
 // Logging middleware – logs every incoming request
 app.use((req, res, next) => {
   console.log(`${req.method}${req.url}`);
+  next();
+});
+
+app.use((req, res, next) => {
+  console.log(`bla bla `);
   next();
 });
 
@@ -126,6 +134,4 @@ app.use((err, req, res, next) => {
 });
 
 // Start server
-app.listen(3000, () =>
-  console.log("Server is running on port 3000!!"),
-);
+app.listen(3000, () => console.log("Server is running on port 3000!!"));
