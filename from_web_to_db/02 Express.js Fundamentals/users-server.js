@@ -10,6 +10,7 @@ let users = [
   { id: 4, name: "Arbel" },
   { id: 4, name: "Inbal" },
   { id: 4, name: "Zoya" },
+  { id: 4, name: "Omry" },
 ];
 
 const app = express();
