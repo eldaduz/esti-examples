@@ -3,6 +3,7 @@ import express from "express";
 let users = [
   { id: 2, name: "Noa" },
   { id: 1, name: "Eran" },
+  { id: 1, name: "Shiri" },
   { id: 1, name: "Ofer Choen" },
   { id: 3, name: "Yossi" },
   { id: 4, name: "Matan" },
