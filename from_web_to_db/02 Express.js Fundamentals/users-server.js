@@ -3,10 +3,12 @@ import express from "express";
 let users = [
   { id: 2, name: "Noa" },
   { id: 1, name: "Eran" },
+  { id: 1, name: "Ofer Choen" },
   { id: 3, name: "Yossi" },
   { id: 4, name: "Matan" },
   { id: 4, name: "Arbel" },
   { id: 4, name: "Inbal" },
+  { id: 4, name: "Zoya" },
 ];
 
 const app = express();
