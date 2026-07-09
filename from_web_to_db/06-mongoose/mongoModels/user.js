@@ -3,9 +3,9 @@ import mongoose from "mongoose";
 const userSchema = new mongoose.Schema({
   name: {
     type: String,
-    required: [true, "name is required"],
+    required: [true, "name is requireddddddd"],
     trim: true,
-    minlength: [2, "name must be at least 2 characters long"],
+    minlength: [2, "name must beeeee at least 2 characters long"],
   },
   color: {
     type: String,
