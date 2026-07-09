@@ -9,13 +9,17 @@ const userSchema = new mongoose.Schema({
   },
   color: {
     type: String,
-    required: [true, "color is required"],
+    required: [true, "color is required!!!!"],
     trim: true,
   },
   age: {
     type: Number,
     required: [true, "age is required"],
-    min: [0, "age cannot be negative"],
+    min: [0, "age cannot be negative!!!!!"],
+  },
+  address: {
+    type: String,
+    required: true,
   },
 });
 
