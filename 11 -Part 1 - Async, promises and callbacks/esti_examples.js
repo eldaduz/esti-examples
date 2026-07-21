@@ -1,7 +1,6 @@
-===============
-
-ab => id = setTimeout(()=> console.log("ab"), 3000)
-abc => clearTimeout(id); setTimeout(()=> console.log("abc"), 3000);
+(ab) => (id = setTimeout(() => console.log("ab"), 3000));
+(abc) => clearTimeout(id);
+setTimeout(() => console.log("abc"), 3000);
 
 console.log("Start");
 const id = setTimeout(() => console.log("Hello from timouts"), 1000);
@@ -45,9 +44,9 @@ startCountdown();
 // Try calling cancelCountdown() quickly to stop it
 setTimeout(() => cancelCountdown(), 1000);
 
-console.log('A');
-setTimeout(()=> console.log("B"), 0);
-console.log('C');
+console.log("A");
+setTimeout(() => console.log("B"), 0);
+console.log("C");
 
 function checkPassword(password) {
   return new Promise((resolve, reject) => {
