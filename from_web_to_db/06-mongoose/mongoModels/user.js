@@ -7,7 +7,7 @@ const userSchema = new mongoose.Schema({
     trim: true,
     minlength: [2, "name must beeeee at least 2 characters long"],
   },
-  color: {
+  colooooor: {
     type: String,
     required: [true, "color is required!!!!"],
     trim: true,
@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  phone: Number,
 });
 
 export default mongoose.model("User", userSchema);
