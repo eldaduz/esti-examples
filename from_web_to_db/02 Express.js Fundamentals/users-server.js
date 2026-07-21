@@ -36,6 +36,7 @@ app.use((req, res, next) => {
 // Middleware to attach request time to each request
 app.use((req, res, next) => {
   req.requestTime = new Date().toISOString();
+  console.log("request time:", requestTime);
   next();
 });
 
