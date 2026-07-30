@@ -1,7 +1,4 @@
 /**
- * Lesson 8 - Observability
- * קובץ קוד מרוכז לתלמידים
- *
  * הנושאים בקובץ:
  * 1. Basic Logs
  * 2. Calculator with Logs
