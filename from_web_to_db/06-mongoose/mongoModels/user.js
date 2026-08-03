@@ -21,6 +21,7 @@ const userSchema = new mongoose.Schema({
     type: String,
     required: true,
   },
+  phone: Number,
 });
 
 export default mongoose.model("User", userSchema);
